@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------ DESDE AQUÍ ------ */
+
+
+body {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	transition: background-image;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: all 1s ease-out;
+}
+
+main section {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+width: 350px;
+color: #f4f4f4;
+border-radius: 15px;
+background-color: #33333393;
+}
+
+.hora {
+	font-size: 50px;
+	color: #ffffffb0;
+	margin-top: 15px;
+}
+
+.fecha {
+	margin-top: 10px;
+    font-size: 20px;
+    color: #ffffffb0;
+	margin-bottom: 15px;
+}
+
+/*
+align-items: center;
+transition: background-image;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: white;
+height: 100vh;
+width: 100%;
+transition: all 1s ease-out;*/

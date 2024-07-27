@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------ DESDE AQUÍ ------ */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-image 1s ease-in;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    transition: all 1s ease-out;
+    font-family: "Poppins", sans-serif;
+	  font-weight: 400;
+	  font-style: normal;
+  
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+
+header a {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    text-decoration: none; 
+    color: white;
+}
+
+
+.cohete {
+    width: 32px;
+    filter: invert();
+}
+
+/* --- ENLACES ----- */
+
+.sectionEnlaces {
+  display: flex;
+  flex-direction: column;
+  margin-right: 150px;
+}
+
+.divEnlaces{
+	display: flex;
+  flex-wrap: wrap;
+	width: 100%;
+	gap: 10px;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.divEnlaces img {
+	filter: invert()
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+form input {
+	background-color: white;
+	border-style: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+button {
+	border-style: none;
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+	background-color: #0371d8;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  cursor: pointer;
+}
+
+.ul-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  gap: 20px;
+  height: 400px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.ul-list a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 5px;
+  min-width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #33333393;
+  text-decoration: none;
+}
+
+.ul-list li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+	width: 20px;
+	height: 20px;
+  background-color: #33333393;
+	top: -8px;
+	right: -5px;
+}
+
+
+.buttonEnlace {
+  background-color: #33333300;
+  cursor: pointer;
+}
+/* SECTION HORA CLIMA Y PASSWORD */
+
+.hora-time-password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+/* HORA Y FECHA */
+
+.contendorFecha-Hora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hora {
+	font-size: 50px;
+	color: #ffffffb0;
+	margin-top: 15px;
+  text-align: center;
+}
+
+.fecha {
+	margin-top: 10px;
+  font-size: 20px;
+  color: #ffffffb0;
+	margin-bottom: 15px;
+  text-align: center;
+}
+
+
+
+/* CLIMA   */
+.climaSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+    
+  
+.container-Time {
+  padding: 20px;
+  width: 100%;
+  max-width: 450px;
+  color: #f4f4f4;
+  border-radius: 15px;
+  background-color: #33333393;
+}
+
+.temp img {
+  width: 20px;
+  filter: invert();
+}
+
+.yellow {
+  color: #ffe5c1;
+}
+
+.divTemp {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
+}
+
+.divTemp .celsius {
+  width: 32px;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+}
+
+.tempNum {
+  font-size: 50px;
+  color: #ffffffef;
+}
+
+.temp2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #ffffffb0;
+}
+
+.time-Hours {
+  display: flex;
+  overflow: scroll;
+  padding: 5px;
+  width: 100%;
+}
+
+
+    /* CONTRASEÑA */
+
+
+ 
+.titlePassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.candado {
+    filter: invert();
+}
+
+.inputPassword {
+    display: block;
+    padding: 20px;
+    width: 450px;
+    max-height: 600px;
+    max-width: 900px;
+    color: #f4f4f4;
+    border-radius: 15px;
+    background-color: #33333393;
+  }
+  .inputPassword label {
+    padding: 20px 0 20px 0;
+  }
+
+  .inputPassword input {
+    margin: 20px 20px 20px 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+
+  .buttonPassword {
+    background-color: #0371d8;
+    border: none;
+    color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+	  font-weight: 400;
+	  font-style: normal;
+    cursor: pointer;
+  }
+ 
+
+  .contraseñaGenerada h4 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .contraseñaGenerada p {
+    color: rgb(224, 224, 138);
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 600px;
+  }
+      
+  .footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position:relative;
+    width: 50%;
+    left: 25%;
+    margin: 0 30px 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px white solid;
+}
+
+  footer .nav1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    filter: invert();
+    padding: 10px;
+    width: 100%;
+}
+
+  .footer2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        position:relative;
+        width: 50%;
+        left: 25%;
+        margin: 0 30px 20px 0;
+        padding-bottom: 10px;
+        border-bottom: 1px white solid;
+    }
+
+
+  footer .nav2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 20px;
+        filter: invert();
+        padding: 10px;
+        width: 50%;
+    }
